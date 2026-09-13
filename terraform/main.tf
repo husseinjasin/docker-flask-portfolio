@@ -13,7 +13,7 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "portfolio_bucket" {
-    bucket = "docker-flask-portfolio-demo-hussein"
+    bucket = var.bucket_name
     tags = {
       Environment = "learning"
 }
