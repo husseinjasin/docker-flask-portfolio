@@ -1,4 +1,5 @@
 variable "bucket_name" {
-    type = string
- 
+  type    = string
+  default = "docker-flask-portfolio-default"
+
 }

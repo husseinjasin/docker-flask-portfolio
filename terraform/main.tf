@@ -13,8 +13,10 @@ provider "aws" {
 
 
 resource "aws_s3_bucket" "portfolio_bucket" {
-    bucket = var.bucket_name
-    tags = {
-      Environment = "learning"
+  bucket = var.bucket_name
+  tags = {
+    Environment = "learning"
+    Project     = local.project_name
+  }
 }
-}
+
